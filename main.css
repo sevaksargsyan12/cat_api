@@ -1,0 +1,145 @@
+html body .none {
+    display: none;
+}
+
+.wrapper {
+    max-width: 1900px;
+    width: 98%;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+}
+
+.wrapper .sidebar {
+    width: 20%;
+    padding: 10px;
+    background: #f1f0f0;
+}
+
+.wrapper .sidebar .category-list {
+    list-style: none;
+    padding: 4px 12px;
+    font-size: 16px;
+}
+
+.wrapper .sidebar .category-list li a {
+    font-size: inherit;
+    color: #000;
+    text-transform: uppercase;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.wrapper .sidebar .category-list li:hover a ,
+.wrapper .sidebar .category-list li.active a {
+    font-weight: bold;
+}
+
+.wrapper .content {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #f5f5f5;
+    position: relative;
+}
+
+.wrapper .content .content-header {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #1b104a;
+}
+
+.wrapper .content .content-body {
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.wrapper .content .content-body .image {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    background: #fdf8f8;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: #f1eeee 1px solid;
+    padding: 2px;
+}
+
+.wrapper .content .content-body .image img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper .content .content-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.wrapper .content .content-footer button {
+    width: 140px;
+    font-size: 14px;
+    font-style: italic;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+    background: #1da5f5b0;
+    color: #fff;
+    border: 1px solid #64a0e9;
+}
+
+.wrapper .content .content-footer button:hover {
+    background: #1b104a;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay .loading {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .loading img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 746px) {
+    .wrapper .sidebar {
+        width: 30%;
+        padding: 10px;
+        background: #f1f0f0;
+    }
+
+    .wrapper .content {
+        width: 70%;
+    }
+
+    .wrapper .content .content-body .image {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .wrapper .content .content-body .image {
+        width: 100%;
+    }
+}
